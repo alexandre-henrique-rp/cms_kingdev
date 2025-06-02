@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bot_trade_sales",
+  "info": {
+    "singularName": "bot-trade-sale",
+    "pluralName": "bot-trade-sales",
+    "displayName": "Bot trade sale"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Uuid": {
+      "type": "customField",
+      "customField": "plugin::strapi-advanced-uuid.uuid"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "lucro": {
+      "type": "string"
+    },
+    "valor_recebido": {
+      "type": "string"
+    },
+    "valor_investido": {
+      "type": "string"
+    },
+    "quantidade": {
+      "type": "string"
+    },
+    "price_compra": {
+      "type": "string"
+    },
+    "price_venda": {
+      "type": "string"
+    }
+  }
+}

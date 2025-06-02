@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contas",
+  "info": {
+    "singularName": "conta",
+    "pluralName": "contas",
+    "displayName": "Conta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tipo.tipo",
+      "inversedBy": "contas"
+    },
+    "valor": {
+      "type": "decimal"
+    },
+    "status_pg": {
+      "type": "enumeration",
+      "required": true,
+      "default": "EM ABERTO",
+      "enum": [
+        "PAGO",
+        "AGENDADO",
+        "AGUARDANDO",
+        "EM ABERTO"
+      ]
+    },
+    "dt_pagamento": {
+      "type": "date"
+    },
+    "comprovante": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "recorencia": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "min": 1,
+      "max": 999
+    },
+    "percelas_pg": {
+      "type": "integer"
+    },
+    "vencimento": {
+      "type": "date"
+    }
+  }
+}

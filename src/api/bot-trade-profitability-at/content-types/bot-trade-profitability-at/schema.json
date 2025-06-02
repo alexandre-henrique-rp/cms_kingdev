@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bot_trade_profitability_ats",
+  "info": {
+    "singularName": "bot-trade-profitability-at",
+    "pluralName": "bot-trade-profitability-ats",
+    "displayName": "Bot trade profitabilityAt"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Uuid": {
+      "type": "customField",
+      "customField": "plugin::strapi-advanced-uuid.uuid"
+    },
+    "taxa": {
+      "type": "string"
+    },
+    "dc_taxa": {
+      "type": "decimal"
+    }
+  }
+}

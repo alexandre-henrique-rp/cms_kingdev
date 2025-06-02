@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  strapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: strapi
+    restart: always
+    ports:
+      - "1337:1337"
+    volumes:
+      - ./container/uploads:/app/public/uploads     # Arquivos de mídia persistentes
+    env_file:
+      - .env

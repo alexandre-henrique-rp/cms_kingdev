@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "markt_criptos",
+  "info": {
+    "singularName": "markt-cripto",
+    "pluralName": "markt-criptos",
+    "displayName": "Markt_cripto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "symbol": {
+      "type": "string"
+    },
+    "usd": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "datetime"
+    },
+    "Uuid": {
+      "type": "customField",
+      "customField": "plugin::strapi-advanced-uuid.uuid"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipos",
+  "info": {
+    "singularName": "tipo",
+    "pluralName": "tipos",
+    "displayName": "Tipo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "uid",
+      "targetField": "nome"
+    },
+    "contas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::conta.conta",
+      "mappedBy": "tipo"
+    }
+  }
+}

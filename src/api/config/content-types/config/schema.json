@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "configs",
+  "info": {
+    "singularName": "config",
+    "pluralName": "configs",
+    "displayName": "Config"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "symbol": {
+      "type": "string"
+    },
+    "taxa_min": {
+      "type": "string"
+    },
+    "dc_taxa_min": {
+      "type": "decimal"
+    },
+    "profitability": {
+      "type": "decimal"
+    }
+  }
+}

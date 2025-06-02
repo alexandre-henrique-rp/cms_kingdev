@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bot_trade_wallets",
+  "info": {
+    "singularName": "bot-trade-wallet",
+    "pluralName": "bot-trade-wallets",
+    "displayName": "Bot trade wallet"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Uuid": {
+      "type": "customField",
+      "customField": "plugin::strapi-advanced-uuid.uuid"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "string"
+    },
+    "usd": {
+      "type": "decimal"
+    },
+    "sellPrice": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}
