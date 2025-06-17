@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 1337
 
 # Comando para rodar em modo dev
-CMD ["npm", "run", "develop"]
+CMD ["npm", "run", "start"]
